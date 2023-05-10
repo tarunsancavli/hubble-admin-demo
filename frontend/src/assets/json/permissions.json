@@ -1,0 +1,226 @@
+[
+    {
+        "name": "Dashboard",
+        "key": "dashboard",
+        "expanded": false,
+        "all": false,
+        "permissions": {
+            "read": false,
+            "modify": false,
+            "delete": false
+        }
+    },
+    {
+        "name": "Customer",
+        "key": "customer",
+        "expanded": false,
+        "all": false,
+        "permissions": {
+            "read": false,
+            "modify": false,
+            "delete": false
+        },
+        "modules": [
+            {
+                "module": "customer_details",
+                "name": "Customer Details",
+                "permissions": {
+                    "read": false,
+                    "modify": false,
+                    "delete": false
+                }
+            },
+            {
+                "module": "orders",
+                "name": "Order",
+                "permissions": {
+                    "read": false,
+                    "modify": false,
+                    "delete": false
+                }
+            },
+            {
+                "module": "hubble_plan",
+                "name": "Hubble Plan",
+                "permissions": {
+                    "read": false,
+                    "modify": false,
+                    "delete": false
+                }
+            },
+            {
+                "module": "internal_user",
+                "name": "Internal Users",
+                "permissions": {
+                    "read": false,
+                    "modify": false,
+                    "delete": false
+                }
+            },
+            {
+                "module": "change_password",
+                "name": "Change Password",
+                "permissions": {
+                    "read": false,
+                    "modify": false,
+                    "delete": false
+                }
+            }
+        ]
+    },
+    {
+        "name": "Network Operators",
+        "key": "carrier",
+        "expanded": false,
+        "all": false,
+        "permissions": {
+            "read": false,
+            "modify": false,
+            "delete": false
+        },
+        "modules": [
+            {
+                "module": "imsi_registrar",
+                "name": "IMSI Registrar",
+                "permissions": {
+                    "read": false,
+                    "modify": false,
+                    "delete": false
+                }
+            },
+            {
+                "module": "network_operator",
+                "name": "Network Operators",
+                "permissions": {
+                    "read": false,
+                    "modify": false,
+                    "delete": false
+                }
+            }
+        ]
+    },
+    {
+        "name": "Billing",
+        "key": "billing",
+        "expanded": false,
+        "all": false,
+        "permissions": {
+            "read": false,
+            "modify": false,
+            "delete": false
+        },
+        "modules": [
+            {
+                "module": "monthly_billing",
+                "name": "Billing information",
+                "permissions": {
+                    "read": false,
+                    "modify": false,
+                    "delete": false
+                }
+            },
+            {
+                "module": "customer_billing_information",
+                "name": "Customer Billing Information",
+                "permissions": {
+                    "read": false,
+                    "modify": false,
+                    "delete": false
+                }
+            },
+            {
+                "module": "carrier_billing_information",
+                "name": "Carrier Billing Information",
+                "permissions": {
+                    "read": false,
+                    "modify": false,
+                    "delete": false
+                }
+            }
+        ]
+    },
+    {
+        "name": "Inventory",
+        "key": "inventory",
+        "expanded": false,
+        "all": false,
+        "permissions": {
+            "read": false,
+            "modify": false,
+            "delete": false
+        },
+        "modules": [
+            {
+                "module": "inventory_information",
+                "name": "Inventory Information",
+                "permissions": {
+                    "read": false,
+                    "modify": false,
+                    "delete": false
+                }
+            }
+        ]
+    },
+    {
+        "name": "Firmware",
+        "key": "firmware",
+        "all": false,
+        "expanded": false,
+        "permissions": {
+            "read": false,
+            "modify": false,
+            "delete": false
+        },
+        "modules": [
+            {
+                "module": "firmware_management",
+                "name": "Firmware Management",
+                "permissions": {
+                    "read": false,
+                    "modify": false,
+                    "delete": false
+                }
+            }
+        ]
+    },
+    {
+        "name": "Configure",
+        "key": "configure",
+        "all": false,
+        "expanded": false,
+        "permissions": {
+            "read": false,
+            "modify": false,
+            "delete": false
+        },
+        "modules": [
+            {
+                "module": "product_list",
+                "name": "Products",
+                "permissions": {
+                    "read": false,
+                    "modify": false,
+                    "delete": false
+                }
+            },
+            {
+                "module": "termination_requests",
+                "name": "Termination Requests",
+                "permissions": {
+                    "read": false,
+                    "modify": false,
+                    "delete": false
+                }
+            },
+            {
+                "module": "blacklisted_domain",
+                "name": "Blacklisted domains",
+                "permissions": {
+                    "read": false,
+                    "modify": false,
+                    "delete": false
+                }
+            }
+        ]
+    }
+]

@@ -1,0 +1,43 @@
+[
+    {
+        "title": "Network Type",
+        "values": [
+            "LTE CAT 4",
+            "LTE CAT 1",
+            "LTE CAT M",
+            "NB-IoT",
+            "3G/HSDPA",
+            "2G/EGPRS"
+        ]
+    },
+    {
+        "title": "Integrated Features",
+        "values": [
+            "Embedded Sim",
+            "Location"
+        ]
+    },
+    {
+        "title": "Form Factor",
+        "values": [
+            "LGA",
+            "LCC",
+            "M.2/NGFF",
+            "MODEM"
+        ]
+    },
+    {
+        "title" : "Region",
+        "values":[
+            "EMEA",
+            "North America",
+            "APAC"
+        ]
+    },
+    {
+        "title" : "Evaluation-Kit",
+        "values":[
+            "Evaluation-kit"
+        ]
+    }
+]

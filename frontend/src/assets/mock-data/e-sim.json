@@ -1,0 +1,18 @@
+[
+    {
+        "title": "Form Factor",
+        "values": [
+            "DFN 6" , 
+            "DFN 8" ,
+            "Multi Cut Plastic"
+            
+        ]
+    },
+    {
+       "title" : "Grade",
+        "values": [
+            "Industrial",
+            "Consumer"
+        ]
+    }
+]

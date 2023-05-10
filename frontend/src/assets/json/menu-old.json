@@ -1,0 +1,196 @@
+
+
+[
+    {
+        "name": "Products",
+        "key": "products",
+        "visible": false,
+        "icon": "assets/icon/svg/newmenu1.svg",
+        "faIcon": "",
+        "route": "/dashboard/products",
+        "expand":false,
+        "parent": false,
+        "children": [
+            {
+                "name": "Product List",
+                "key": "product_list",
+                "visible": false,
+                "icon": "",
+                "faIcon": "",
+                "route": "/dashboard/products/hardware"
+            }
+        ]
+    },
+    {
+        "name": "Customer",
+        "key": "customer",
+        "visible": false,
+        "icon": "assets/icon/svg/newmenu1.svg",
+        "faIcon": "",
+        "route": "/dashboard/customer",
+        "expand":false,
+        "parent": false,
+        "children": [
+            {
+                "name": "Customer Details",
+                "key": "customer_details",
+                "visible": false,
+                "icon": "",
+                "faIcon": "",
+                "route": "/dashboard/customer/users"
+            },
+            {
+                "name": "Orders",
+                "key": "orders",
+                "visible": false,
+                "icon": "",
+                "faIcon": "",
+                "route": "/dashboard/customer/orders"
+            },
+            {
+                "name": "Hubble Plan",
+                "key": "hubble_plan",
+                "visible": false,
+                "icon": "",
+                "faIcon": "",
+                "route": "/dashboard/customer/hubble-plans"
+            },
+            {
+                "name": "Internal Users",
+                "key": "internal_user",
+                "visible": false,
+                "icon": "",
+                "faIcon": "",
+                "route": "/dashboard/customer/internal-users"
+            },
+            {
+                "name": "Change Password",
+                "key": "change_password",
+                "visible": false,
+                "icon": "",
+                "faIcon": "",
+                "route": "/dashboard/customer/change-password"
+            }
+        ]
+    },
+    {
+        "name": "Carrier",
+        "key": "carrier",
+        "visible": false,
+        "icon": "assets/icon/svg/newmenu1.svg",
+        "faIcon": "",
+        "route": "/carrier/network-operator",
+        "expand":false,
+        "parent": false,
+        "children": [
+            {
+                "name": "Network Operator",
+                "key": "network_operator",
+                "visible": false,
+                "icon": "",
+                "faIcon": "",
+                "route": "/dashboard/carrier/network-operators"
+            }
+        ]
+    },
+    {
+        "name": "Inventory",
+        "key": "inventory",
+        "visible": false,
+        "icon": "assets/icon/svg/newmenu1.svg",
+        "faIcon": "",
+        "route": "inventory",
+        "expand":false,
+        "parent": false,
+        "children": [
+            {
+                "name": "Inventory Information",
+                "key": "inventory_information",
+                "visible": false,
+                "icon": "",
+                "faIcon": "",
+                "route": "/dashboard/inventory/inventory-information"
+            },
+            {
+                "name": "IMSI Information",
+                "key": "imsi_information",
+                "visible": false,
+                "icon": "",
+                "faIcon": "",
+                "route": "/dashboard/inventory/imsi-information"
+            }
+        ]
+    },
+    {
+        "name": "Review",
+        "key": "review",
+        "visible": false,
+        "icon": "assets/icon/svg/newmenu1.svg",
+        "faIcon": "",
+        "route": "/dashboard/review",
+        "expand":false,
+        "parent": false,
+        "children": [
+            {
+                "name": "Termination Requests",
+                "key": "termination_requests",
+                "visible": false,
+                "icon": "",
+                "faIcon": "",
+                "route": "/dashboard/review/termination-requests"
+            },
+            {
+                "name": "Billing Information",
+                "key": "monthly_billing",
+                "visible": false,
+                "icon": "",
+                "faIcon": "",
+                "route": "/dashboard/review/monthly-billing-list"
+            }
+        ]
+    },
+    
+    {
+        "name": "Firmware",
+        "key": "firmware",
+        "visible": false,
+        "icon": "assets/icon/svg/newmenu1.svg",
+        "faIcon": "",
+        "route": "/dashboard/firmware",
+        "expand":false,
+        "parent": false,
+        "children": [
+            {
+                "name": "Firmware Management",
+                "key": "firmware_management",
+                "visible": false,
+                "icon": "",
+                "faIcon": "",
+                "route": "/dashboard/firmware/firmware-management"
+            }
+        ]
+    },
+    {
+        "name": "Security",
+        "key": "security",
+        "visible": false,
+        "icon": "assets/icon/svg/newmenu1.svg",
+        "faIcon": "",
+        "route": "/dashboard/security",
+        "expand":false,
+        "parent": false,
+        "children": [
+            {
+                "name": "Blacklisted Domains",
+                "key": "blacklisted_domain",
+                "visible": false,
+                "icon": "",
+                "faIcon": "",
+                "route": "/dashboard/security/domain-blacklist"
+            }
+        ]
+    }
+
+
+
+]

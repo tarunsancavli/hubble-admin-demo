@@ -1,0 +1,211 @@
+[
+    {
+      "name": "Products",
+      "key": "products",
+      "expanded": false,
+      "all":false,
+      "permissions": {
+        "read": false,
+        "modify": false,
+        "delete": false
+      },
+      "modules": [
+        {
+          "module": "product_list",
+          "name": "Product List",
+          "permissions": {      
+            "read": false,
+            "modify": false,
+            "delete": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "Customer",
+      "key": "customer",
+      "expanded": false,
+      "all":false,
+      "permissions": {
+        "read": false,
+        "modify": false,
+        "delete": false
+      },
+      "modules": [
+        {
+          "module": "customer_details",
+          "name": "Customer Details",
+          "permissions": {
+            "read": false,
+            "modify": false,
+            "delete": false
+          }
+        },
+        {
+          "module": "orders",
+          "name": "Order",
+          "permissions": {
+            "read": false,
+            "modify": false,
+            "delete": false
+          }
+        },
+        {
+          "module": "hubble_plan",
+          "name": "Hubble Plan",
+          "permissions": {
+            "read": false,
+            "modify": false,
+            "delete": false
+          }
+        },
+        {
+          "module": "internal_user",
+          "name": "Internal Users",
+          "permissions": {
+            "read": false,
+            "modify": false,
+            "delete": false
+          }
+        },
+        {
+          "module": "change_password",
+          "name": "Change Password",
+          "permissions": {            
+            "read": false,
+            "modify": false,
+            "delete": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "Inventory",
+      "key": "inventory",
+      "expanded": false,
+      "all":false,
+      "permissions": {        
+        "read": false,
+        "modify": false,
+        "delete": false
+      },
+      "modules": [
+        {
+          "module": "inventory_information",
+          "name": "Inventory Information",
+          "permissions": {           
+            "read": false,
+            "modify": false,
+            "delete": false
+          }
+        },
+        {
+          "module": "inventory_management",
+          "name": "Inventory Management",
+          "permissions": {           
+            "read": false,
+            "modify": false,
+            "delete": false
+          }
+        },
+        {
+          "module": "imsi_information",
+          "name": "IMSI Information",
+          "permissions": {           
+            "read": false,
+            "modify": false,
+            "delete": false
+          }
+        },
+        {
+          "module": "stock_list",
+          "name": "Stock List",
+          "permissions": {         
+            "read": false,
+            "modify": false,
+            "delete": false
+          }
+        },
+        {
+          "module": "stock_request",
+          "name": "Stock Request",
+          "permissions": {      
+            "read": false,
+            "modify": false,
+            "delete": false
+          }
+        },
+        {
+          "module": "logistics",
+          "name": "Logistics",
+          "permissions": {        
+            "read": false,
+            "modify": false,
+            "delete": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "Review",
+      "key": "review",
+      "expanded": false,
+      "all":false,
+      "permissions": {
+        "read": false,
+        "modify": false,
+        "delete": false
+      },
+      "modules": [
+        {
+          "module": "overage_billing",
+          "name": "Billing Overage Information",
+          "permissions": {      
+            "read": false,
+            "modify": false,
+            "delete": false
+          }
+        },
+        {
+          "module": "renew",
+          "name": "Combo Plans Renewal",
+          "permissions": {      
+            "read": false,
+            "modify": false,
+            "delete": false
+          }
+        },
+        {
+          "module": "termination_requests",
+          "name": "Termination Request",
+          "permissions": {      
+            "read": false,
+            "modify": false,
+            "delete": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "Security",
+      "key": "security",
+      "all":false,
+      "expanded": false,
+      "permissions": {
+        "read": false,
+        "modify": false,
+        "delete": false
+      },
+      "modules": [
+        {
+          "module": "blacklisted_domain",
+          "name": "Blacklisted Domains",
+          "permissions": {   
+            "read": false,
+            "modify": false,
+            "delete": false
+          }
+        }
+      ]
+    }
+  ]

@@ -1,0 +1,208 @@
+[
+    {
+        "name": "Products",
+        "key": "products",
+        "visible": false,
+        "icon": "assets/icon/png/products.png",
+        "route": "/dashboard/products",
+        "expand":false,
+        "children": [
+            {
+                "name": "Product List",
+                "key": "product_list",
+                "visible": false,
+                "icon": "",
+                "route": "/dashboard/products/hardware"
+            }
+        ]
+    },
+    {
+        "name": "Customer",
+        "key": "customer",
+        "visible": false,
+        "icon": "assets/icon/png/customer.png",
+        "route": "/dashboard/customer",
+        "expand":false,
+        "children": [
+            {
+                "name": "Customer Details",
+                "key": "customer_details",
+                "visible": false,
+                "icon": "",
+                "route": "/dashboard/customer/users"
+            },
+            {
+                "name": "Orders",
+                "key": "orders",
+                "visible": false,
+                "icon": "",
+                "route": "/dashboard/customer/orders"
+            },
+            {
+                "name": "Hubble Plan",
+                "key": "hubble_plan",
+                "visible": false,
+                "icon": "",
+                "route": "/dashboard/customer/hubble-plans/standard",
+                "expand":false,
+                "children": [
+                    {
+                        "name": "Standard Plans",
+                        "key": "standard_plan",
+                        "visible": true,
+                        "icon": "",
+                        "route": "/dashboard/customer/hubble-plans/standard"
+                    },
+                    {
+                        "name": "Special Plans",
+                        "key": "special_plan",
+                        "visible": true,
+                        "icon": "",
+                        "route": "/dashboard/customer/hubble-plans/special"
+                    }
+                ]
+            },
+            {
+                "name": "Internal Users",
+                "key": "internal_user",
+                "visible": false,
+                "icon": "",
+                "route": "/dashboard/customer/internal-users"
+            },
+            {
+                "name": "Change Password",
+                "key": "change_password",
+                "visible": false,
+                "icon": "",
+                "route": "/dashboard/customer/change-password"
+            }
+        ]
+    },
+    {
+        "name": "Inventory",
+        "key": "inventory",
+        "visible": false,
+        "icon": "assets/icon/png/inventory.png",
+        "route": "inventory",
+        "expand":false,
+        "children": [
+            {
+                "name": "Inventory Information",
+                "key": "inventory_information",
+                "visible": false,
+                "icon": "",
+                "route": "/dashboard/inventory/inventory-information"
+            },
+            {
+                "name": "Inventory Management",
+                "key": "inventory_management",
+                "visible": false,
+                "icon": "",
+                "route": "/dashboard/inventory/inventory-management"
+            },
+            {
+                "name": "IMSI Information",
+                "key": "imsi_information",
+                "visible": false,
+                "icon": "",
+                "route": "/dashboard/inventory/imsi-information"
+            },
+            {
+                "name": "Stock",
+                "key": "stock",
+                "visible": false,
+                "icon": "",
+                "route": "/dashboard/inventory/stock",
+                "expand":false,
+                "children": [
+                    {
+                        "name": "Stock List",
+                        "key": "stock_list",
+                        "visible": false,
+                        "icon": "",
+                        "route": "/dashboard/inventory/stock"
+                    },
+                    {
+                        "name": "Stock Request",
+                        "key":"stock_request",
+                        "visible": false,
+                        "icon": "",
+                        "route": "/dashboard/inventory/stock-request"
+                    }
+                ]
+            },
+            {
+                "name": "Logistics",
+                "key": "logistics",
+                "visible": false,
+                "icon": "",
+                "route": "/dashboard/inventory/logistics/manufacturer",
+                "expand":false,
+                "children": [
+                    {
+                        "name": "Manufacturer",
+                        "key": "manufacturer",
+                        "visible": true,
+                        "icon": "",
+                        "route": "/dashboard/inventory/logistics/manufacturer"
+                    },
+                    {
+                        "name": "Warehouse",
+                        "key": "warehouse",
+                        "visible": true,
+                        "icon": "",
+                        "route": "/dashboard/inventory/logistics/warehouse"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Review",
+        "key": "review",
+        "visible": false,
+        "icon": "assets/icon/png/review.png",
+        "route": "/dashboard/review",
+        "expand":false,
+        "children": [
+            {
+                "name": "Overage Billing Information",
+                "key": "overage_billing",
+                "visible": false,
+                "icon": "",
+                "route": "/dashboard/review/overage-billing"
+            },
+            {
+                "name": "Combo Plans Renewal",
+                "key": "renew",
+                "visible": false,
+                "icon": "",
+                "route": "/dashboard/review/combo-plan-renew"
+            },
+            {
+                "name": "Termination Requests",
+                "key": "termination_requests",
+                "visible": false,
+                "icon": "",
+                "route": "/dashboard/review/termination-requests"
+            }
+        ]
+    },
+    {
+        "name": "Security",
+        "key": "security",
+        "visible": false,
+        "icon": "assets/icon/png/security.png",
+        "route": "/dashboard/security",
+        "expand":false,
+        "children": [
+            {
+                "name": "Blacklisted Domains",
+                "key": "blacklisted_domain",
+                "visible": false,
+                "icon": "",
+                "route": "/dashboard/security/domain-blacklist"
+            }
+        ]
+    }
+]

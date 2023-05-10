@@ -1,0 +1,46 @@
+@import "mixins/_breakpoints.scss";
+@import "helpers/_font-size-helpers.scss";
+@import "helpers/_spacing-helpers.scss";
+@import "ui/_checkbox.scss";
+@import "ui/_toggle-button.scss";
+
+
+.color-dark {
+  color: #4a4a4a;
+}
+
+.color-accepted {
+  color: #4a90e2;
+}
+
+.nav {
+  &-item {
+    position: relative;
+
+    .dropdown {
+      &-menu {
+        &[placement^="top-"] {
+          top: 100% !important;
+        }
+
+        &[placement$="right"] {
+          right: 0 !important;
+          left: auto !important;
+        }
+
+        &[placement^="bottom-"] {
+          bottom: 100% !important;
+        }
+
+        &[placement$="left"] {
+          left: 0 !important;
+          right: auto !important;
+        }
+      }
+    }
+  }
+}
+
+* {
+  gap: var(--gap);
+}

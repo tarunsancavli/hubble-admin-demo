@@ -1,0 +1,73 @@
+<div class="content-wrap">
+    <div class="card" style="width: 65rem;">
+        <div class="card-header">
+            <strong>
+                <h2 class="card-title lato">Customer Details</h2>
+            </strong>
+            <div class="header-element">
+                <input type="text" class="form-control lato" #searchInput (keyup)="onKey(searchInput.value)"
+                    autocomplete="off" name="search" placeholder="Search by customer name / email" />
+                <button class="btn btn-add" routerLink="/user/create"><strong class="lato">Create Customer &nbsp; <i
+                            class="fa fa-plus"></i></strong></button>
+            </div>
+        </div>
+        <ng-container *ngIf="customers.length != 0; else elseBlock">
+        <div class="card-body">
+                <div class="table-container">
+                    <table class="table table-stripped">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th class="lato">Customer Name</th>
+                                <th class="lato">Company Name</th>
+                                <th class="lato">Email</th>
+                                <th></th>
+                                <th></th>
+                                <th class="lato">Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <ng-container *ngFor="let customer of customers ; let i = index;">
+                                <tr>
+                                    <td>{{i+1}}</td>
+                                    <td class="lato">{{ customer.firstName}} {{ customer.lastName}}</td>
+                                    <td class="lato">{{customer.companyName}}</td>
+                                    <td class="lato">{{customer.email}}</td>
+                                    <td class="padding-td">
+                                        <button class="button-square"><i class="fa fa-pencil"></i></button>
+                                    </td>
+                                    <td class="padding-td">
+                                        <button class="admin-btn lato">Login</button>
+                                    </td>
+                                    <td>
+                                        <div class="lato active-btn">
+                                            {{customer.active ? 'Active': 'Suspended'}}
+                                        </div>
+                                    </td>
+                                </tr>
+                            </ng-container>
+            </tbody>
+            </table>
+        </div>
+    </div>
+</ng-container>
+<ng-template #elseBlock>
+    <p class="no-list-align lato">Customer List Empty</p>
+</ng-template>
+
+<div class="pagination-main" *ngIf="pager?.pages && pager?.pages?.length" class="pagination">
+    <div class="pagination">
+      <button class="first-btn lato" (click)="setPage(0)" [disabled]="pager?.currentPage == 0">First</button>
+      <button class="item-btn" (click)="setPrevPage()" [disabled]="pager?.currentPage == 0"><i
+          class="fa fa-angle-left"></i></button>
+      <span *ngFor="let page of pager.pages" [ngClass]="{active:pager?.currentPage === (page)}"
+        (click)="setPage(page)">{{ page + 1 }}</span>
+      <button class="item-btn" (click)="setNextPage()"
+        [disabled]="(pager?.currentPage + 1) == pager?.totalPages"><i class="fa fa-angle-right"></i></button>
+      <button class="last-btn lato" (click)="setPage(pager?.totalPages - 1)"
+        [disabled]="(pager?.currentPage + 1) == pager?.totalPages">Last</button>
+    </div>
+  </div>
+
+</div>
+</div>

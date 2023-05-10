@@ -1,0 +1,42 @@
+[
+    {
+        "title": "Network Type",
+        "values": [
+            "LTE CAT M",
+            "NB-IoT",
+            "2G/EGPRS"
+        ]
+    },
+    {
+       "title" : "Controller",
+        "values": [
+            "Cortex - M4",
+            "Cortex - M3",
+            "ESP32"
+        ]
+    },
+    {
+        "title": "Integrated Features",
+        "values": [
+            "Location",
+            "WiFi/BT",
+            "Antenna",
+            "Embedded SIM"
+            
+        ]
+    },
+    {
+        "title" : "Region",
+        "values":[
+            "EMEA",
+            "North America",
+            "APAC"
+        ]
+    },
+    {
+        "title" : "Evaluation-Kit",
+        "values":[
+            "Evaluation-kit"
+        ]
+    }
+]

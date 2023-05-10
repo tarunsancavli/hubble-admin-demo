@@ -1,0 +1,98 @@
+<div class="content-wrap">
+    <div class="go-back lato" routerLink="/users/list"><span><i class="fa fa-arrow-left left-arrow"></i></span> Back to
+        Customer List </div>
+    <div class="card card-container">
+        <div class="card-title">
+            <strong>
+                <h2 class="card-title lato">Create Customer</h2>
+            </strong>
+        </div>
+        <form [formGroup]="profileForm"  (ngSubmit)="onSubmit()">
+            <div >
+                <label for="company-name" class="lato text-align">Company Name</label>
+                <input id="company-name" type="text" formControlName="companyName" class="form-control lato"
+                    autocomplete="off" name="company-name" placeholder="Enter Company Name" [ngClass]="{'error': (profileForm.controls['companyName'].invalid && profileForm.controls['companyName'].dirty || profileForm.controls['companyName'].touched), 'success': profileForm.controls['companyName'].valid && profileForm.controls['companyName'].touched}" />
+            </div>
+            <div class="item-align">
+                <div>
+                    <label for="first-name" class="lato text-align">First Name</label>
+                    <input id="first-name" type="text" formControlName="firstName" class="form-control lato"
+                        autocomplete="off" name="first-name" placeholder="First Name" [ngClass]="{'error': (profileForm.controls['firstName'].invalid && profileForm.controls['firstName'].dirty || profileForm.controls['firstName'].touched), 'success': profileForm.controls['firstName'].valid && profileForm.controls['firstName'].touched }"/>
+                </div>
+                <div>
+                    <label for="last-name" class="lato text-align">Last Name</label>
+                    <input id="last-name" type="text" formControlName="lastName" class="form-control lato"
+                        autocomplete="off" name="last-name" placeholder="Last Name" [class.success]="profileForm.controls['lastName'].valid && profileForm.controls['lastName'].touched"/>
+                </div>
+            </div>
+            <div class="item-align">
+                <div>
+                    <label for="email" class="lato text-align">Email</label>
+                    <input id="email" type="email" formControlName="email" class="form-control lato" autocomplete="off"
+                        name="email" placeholder="Email" [class.success]="profileForm.controls['email'].valid" [ngClass]="{'error': (profileForm.controls['email'].invalid && profileForm.controls['email'].dirty || profileForm.controls['email'].touched), 'success': profileForm.controls['email'].valid && profileForm.controls['email'].touched}"/>
+                </div>
+                <div>
+                    <label for="primary-contact-number" class="lato text-align">Primary Contact Number</label>
+                    <input id="primary-contact-number" type="number" formControlName="primaryContactNumber"
+                        class="form-control lato" autocomplete="off" name="primary-contact-number"
+                        placeholder="Primary Contact Number" [ngClass]="{'error': (profileForm.controls['primaryContactNumber'].invalid && profileForm.controls['primaryContactNumber'].dirty || profileForm.controls['primaryContactNumber'].touched), 'success': profileForm.controls['primaryContactNumber'].valid && profileForm.controls['primaryContactNumber'].touched}"/>
+                </div>
+            </div>
+            <hr>
+            <div formGroupName="billingAddress" class="lato text-align">Billing Address<br>
+                <input id="billing-address" type="checkbox" formControlName="sameEmail" class="email-align"><span
+                    class="email-text lato">same as Account email address</span>
+                <input id="billing-address-email" type="email" formControlName="billingEmail" class="form-control lato"
+                    autocomplete="off" name="billingEmail" placeholder="Email" [ngClass]="{'error': (profileForm.get('billingAddress.billingEmail')?.invalid && profileForm.get('billingAddress.billingEmail')?.dirty || profileForm.get('billingAddress.billingEmail')?.touched), 'success': profileForm.get('billingAddress.billingEmail')?.valid && profileForm.get('billingAddress.billingEmail')?.touched}" /> 
+                <input id="billing-address-address" type="text" formControlName="billingAddress"
+                    class="form-control lato" autocomplete="off" name="billingAddress" placeholder="Address" [ngClass]="{'error': (profileForm.get('billingAddress.billingAddress')?.invalid && profileForm.get('billingAddress.billingAddress')?.dirty ||profileForm.get('billingAddress.billingAddress')?.touched), 'success': profileForm.get('billingAddress.billingAddress')?.valid && profileForm.get('billingAddress.billingAddress')?.touched}"/>
+                <input id="billing-address-city" type="text" formControlName="billingCity" class="form-control lato"
+                    autocomplete="off" name="billingCity" placeholder="City" [ngClass]="{'error': (profileForm.get('billingAddress.billingCity')?.invalid && profileForm.get('billingAddress.billingCity')?.dirty || profileForm.get('billingAddress.billingCity')?.touched), 'success': profileForm.get('billingAddress.billingCity')?.valid}"/>
+                <input id="billing-address-state" type="text" formControlName="billingState" class="form-control lato"
+                    autocomplete="off" name="billingState" placeholder="State" [ngClass]="{'error':(profileForm.get('billingAddress.billingState')?.invalid && profileForm.get('billingAddress.billingState')?.dirty || profileForm.get('billingAddress.billingState')?.touched), 'success': profileForm.get('billingAddress.billingState')?.valid && profileForm.get('billingAddress.billingState')?.touched}"/>
+                <select id="billing-address-country" type="text" formControlName="billingCountry"
+                    class="form-control lato" name="billingCountry" aria-label="label for the select">
+                    <option value="">Select Country</option>
+                    <option *ngFor="let item of countryList" [value]="item.name">
+                        {{item.name}}
+                    </option>
+                </select>
+                <input id="billing-address-zipcode" type="number" formControlName="billingZipcode"
+                    class="form-control lato" autocomplete="off" name="sbillingZipcode" placeholder="Zip Code" [ngClass]="{'error': (profileForm.get('billingAddress.billingZipcode')?.invalid && profileForm.get('billingAddress.billingZipcode')?.dirty || profileForm.get('billingAddress.billingZipcode')?.touched),'success': profileForm.get('billingAddress.billingZipcode')?.valid && profileForm.get('billingAddress.billingZipcode')?.touched}"/>
+                <input id="billing-address-contact" type="number" formControlName="billingContact"
+                    class="form-control lato" autocomplete="off" name="billingContact" placeholder="Contact No" [ngClass]="{'error': (profileForm.get('billingAddress.billingContact')?.invalid && profileForm.get('billingAddress.billingContact')?.dirty || profileForm.get('billingAddress.billingContact')?.touched), 'success': profileForm.get('billingAddress.billingContact')?.valid && profileForm.get('billingAddress.billingContact')?.touched}" />
+            </div>
+            <div>
+                <label for="due-date" class="lato text-align">Set Due date period ( In Days )</label>
+                <input id="due-date" type="number" formControlName="duePeriod" class="form-control lato"
+                    autocomplete="off" name="duePeriod" placeholder="Due date period ( In Days )" [class.success]="profileForm.controls['duePeriod'].valid && profileForm.controls['duePeriod'].touched"/>
+            </div>
+            <div>
+                <label for="CC" class="lato text-align">Customer side mail recipients(CC)</label>
+                <div class="form-control">
+                    <tag-input (onAdd)= "onAddCC($event)" name="CC" theme='bootstrap'
+                    inputClass="cc-mail-chip" placeholder="+ Add New " formControlName="CC"
+                    secondaryPlaceholder="Enter Customer side mail recipients mail address ">
+                  </tag-input>
+                </div>
+            </div>
+                <label for="BCC" class="lato text-align">Send Customer mail Copy(BCC)</label>
+                 <div [formGroup]="dropDownForm" class="bcc-dropdown">
+                    <ng-multiselect-dropdown (onSelect)="onItemSelect($event)" (onDeSelect)="onItemDeselect($event)" (onDeSelectAll)="onDeSelectAll($event)"
+                        [settings]="dropdownSettings"
+                        [data]="dropdownList"
+                        [Placeholder]="'select mail Address'"
+                        (onSelectAll)="onSelectAll($event)"
+                        formControlName="myItems">
+                    </ng-multiselect-dropdown>
+                </div>
+            <div class="button-div">
+                <button type="button" class="btn btn-sm btn-secondary lato">Create Data Plan</button>
+                <div class="cancel-create-div">
+                    <button type="submit" [disabled]="!profileForm.valid" class="btn btn-sm create-btn lato">Create</button>
+                    <button type="button" class="btn btn-sm cancel-btn lato" routerLink="/users/list">Cancel</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

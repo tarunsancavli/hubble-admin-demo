@@ -1,0 +1,181 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.toolbar-bg-color {
+  background-color: #004273;
+}
+
+.logo {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 7%;
+}
+
+.button-wrap {
+  padding-bottom: 10px;
+}
+
+i {
+  font-size: 18px;
+  padding-left: 5px;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+span {
+  color: white;
+  padding-left: 5px;
+  padding-bottom: 10px;
+}
+
+.button-txt {
+  display:flex;
+  padding-left: 10px;
+  font-size: 20px;
+  color: white;
+}
+
+.button-content {
+  display: inline-flex;
+  padding-right: 20px;
+}
+
+.example-container {
+  position: absolute;
+  top: 60px;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+}
+
+.example-sidenav {
+  padding-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 280px;
+  background: #00487e;
+
+}
+
+.menu-img {
+  position: relative;
+  top: 5px;
+  right: 5px;
+  width: 20px;
+  fill: goldenrod;
+}
+
+.example-accordion {
+  display: contents;
+  max-width: 500px;
+}
+
+.example-accordion-item {
+  display: contents;
+}
+
+.example-accordion-item + .example-accordion-item {
+  padding-bottom: 10px;
+  border-top: none;
+}
+
+.example-accordion-item-header {
+  display: block;
+  justify-content: space-between;
+}
+
+.example-accordion-item-description {
+  float: right;
+  font-weight: 10px;
+  font-size: 1.5rem;
+}
+
+.example-accordion-item-header,
+.example-accordion-item-body {
+  padding: 20px 20px 20px 20px;
+  
+}
+
+.example-accordion-item-header:hover {
+  cursor: pointer;
+  background-color: #004273;
+}
+
+.example-accordion-item:first-child {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.example-accordion-item:last-child {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.sidebar-txt {
+  font-size: 18px;
+}
+
+mat-sidenav-content {
+  background-color: #f5f5f5;
+  padding-left: 150px;
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+
+top-header {
+  float: left;
+}
+
+input {
+  border-radius: 25px;
+}
+
+h2 {
+  padding: 20px;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #9b9b9b;
+}
+
+mat-sidenav {
+  ::ng-deep {
+    ::-webkit-scrollbar {
+      width: 4px;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      background-color: #9b9b9b;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #fff;
+    }
+  }
+}
+
+.first:hover {
+  background-color: #02355b;
+}
+
+.content-wrap {
+  background-color: #f5f5f5;
+  width: auto;
+}
+
+
+.router-link-active {
+  background-color: #02355b;
+}
+

@@ -1,0 +1,60 @@
+<mat-toolbar class="navbar navbar-expand toolbar-bg-color">
+  <div class="logo">
+    <img src="../../assets/logo/heade-logo.svg">
+  </div>
+  <span class="example-spacer"></span>
+  <div class="button-wrap">
+    <div class="button-content">
+      <a href="#" class="toolbar-bg-color">
+        <div class="button-txt"><i class="fa fa-user" [ngStyle]="{'color': 'white'}"><span class="lato">User</span></i></div>
+      </a>
+    </div>
+    <div class="button-content">
+      <a href="#" class="toolbar-bg-color">
+        <div class="button-txt"><i class="fa fa-sign-out " [ngStyle]="{'color': 'white'}"><span class="lato">Logout</span></i></div>
+      </a>
+    </div>
+  </div>
+</mat-toolbar>
+
+<mat-sidenav-container class="example-container">
+  <mat-sidenav #sidenav mode="side" opened class="example-sidenav lato" [fixedInViewport]= false> 
+    <cdk-accordion class="example-accordion">
+  <cdk-accordion-item 
+    *ngFor="let item of items; let index = index;"
+    [expanded]="item.expanded"
+    #accordionItem="cdkAccordionItem"
+    class="example-accordion-item"
+    role="button"
+    tabindex="0"
+    [attr.id]="'accordion-header-' + index"
+    [attr.aria-expanded]="accordionItem.expanded"
+    [attr.aria-controls]="'accordion-body-' + index">
+    <div class="example-accordion-item-header" (click)="accordionItem.toggle()">
+      <img class="menu-img" src={{item.src}}>
+      <span class="sidebar-txt">{{ item.title }}</span>
+      <span class="example-accordion-item-description">
+        <span><i class="fa fa-angle-right"></i></span>
+      </span>
+    </div>
+    <div
+      class="example-accordion-item-body"
+      *ngFor="let subtitle of item.subTitle; let first=first"
+      [routerLink]="subtitle.route"
+      [ngClass]="{first: first}"
+      [routerLinkActive]="subtitle.route? 'router-link-active' : ''"
+      role="region"
+      [style.display]="accordionItem.expanded ? '' : 'none'"
+      [attr.id]="'accordion-body-' + index"
+      [attr.aria-labelledby]="'accordion-header-' + index">
+      <a><span class="sidebar-txt">{{subtitle.title}}</span></a>
+    </div>
+  </cdk-accordion-item>
+</cdk-accordion>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div class="content-wrap">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
